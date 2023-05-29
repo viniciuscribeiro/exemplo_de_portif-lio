@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor_primaria: #000000;
+    --cor_secundaria: #f6f6f6;
+    --cor_terciaria: #22d4fd;
+
+    --fonte_primaria: 'Krona One', sans-serif;
+    --fonte_secundaria:  'Montserrat', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor_primaria);
+    color: var(--cor_secundaria);
+    box-sizing: border-box;
+}
+
+header{
+    padding: 2% 0% 0% 15%;  
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+
+.menu_link{
+    font-family: var(--fonte_secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor_terciaria);
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
+.conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-family: var(--fonte_primaria);
+}
+
+.titulo_destaque{
+    color: var(--cor_terciaria);
+}
+
+.texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte_secundaria);
+}
+
+.div_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.subtitulo{
+    font-family: var(--fonte_primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--cor_terciaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte_secundaria);
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor_secundaria);
+}
+
+.redes:hover{
+    background-color: #272727;
+}
+
+.imagem_mulher{
+    width: 50%;
+}
+
+footer{
+    background-color: var(--cor_terciaria);
+    text-align: center;
+    color: var(--cor_primaria);
+    padding: 24px;
+    font-family: var(--fonte_secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1200px){
+    header{
+        padding: 10%;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo{
+        width: auto;
+    }
+}
